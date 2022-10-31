@@ -108,3 +108,11 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 }
+
+/* .hide-img {
+    display: none;
+} */
+
+.absolute-img {
+    position: absolute;
+}
