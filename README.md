@@ -6,7 +6,7 @@
 
 [x] Preview deploy from Netlify showing on your PR
 
-[] On clicking a hiding place button, the total number of guesses increment
+[x] On clicking a hiding place button, the total number of guesses increment
 
 [] On clicking the correct hiding place button, the total number of correct guesses increment
 
