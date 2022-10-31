@@ -12,7 +12,7 @@
 
 [x] On clicking the incorrect hiding place button, the number of incorrect guesses increments
 
-[] On click, see the correct hiding place's image change, clearing out the previous correct guess style
+[x] On click, see the correct hiding place's image change, clearing out the previous correct guess style
 
 handleGuess
 

@@ -28,10 +28,8 @@ treeButton.addEventListener('click', () => {
     if (answer === 'tree') {
         correctGuesses++;
         treeContainer.classList.add('face');
-        console.log(correctGuesses + 'W');
     } else {
         totalLosses++;
-        console.log(totalLosses + 'L');
     }
 });
 
@@ -45,10 +43,8 @@ boulderButton.addEventListener('click', () => {
     if (answer === 'boulder') {
         correctGuesses++;
         boulderContainer.classList.add('face');
-        console.log(correctGuesses + 'W');
     } else {
         totalLosses++;
-        console.log(totalLosses + 'L');
     }
 });
 
@@ -62,10 +58,8 @@ shedButton.addEventListener('click', () => {
     if (answer === 'shed') {
         correctGuesses++;
         shedContainer.classList.add('face');
-        console.log(correctGuesses + 'W');
     } else {
         totalLosses++;
-        console.log(totalLosses + 'L');
     }
 });
 
@@ -74,6 +68,7 @@ function resetFace() {
     boulderContainer.classList.remove('face');
     shedContainer.classList.remove('face');
 }
+
 function handleGuess(correctSpot, userGuess) {
     // reset the styles
     // then increment the guesses
