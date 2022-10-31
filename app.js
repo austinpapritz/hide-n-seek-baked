@@ -23,12 +23,15 @@ treeButton.addEventListener('click', () => {
     resetFace();
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
-    handleGuess(answer, 'tree');
 
     if (answer === 'tree') {
-        correctGuesses++;
         treeContainer.classList.add('face');
+        correctGuesses++;
+    } else if (answer === 'boulder') {
+        boulderContainer.classList.add('face');
+        totalLosses++;
     } else {
+        shedContainer.classList.add('face');
         totalLosses++;
     }
 });
@@ -38,12 +41,14 @@ boulderButton.addEventListener('click', () => {
     resetFace();
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
-    handleGuess(answer, 'boulder');
-
     if (answer === 'boulder') {
         correctGuesses++;
         boulderContainer.classList.add('face');
+    } else if (answer === 'tree') {
+        treeContainer.classList.add('face');
+        totalLosses++;
     } else {
+        shedContainer.classList.add('face');
         totalLosses++;
     }
 });
@@ -53,12 +58,14 @@ shedButton.addEventListener('click', () => {
     resetFace();
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
-    handleGuess(answer, 'shed');
-
     if (answer === 'shed') {
-        correctGuesses++;
         shedContainer.classList.add('face');
+        correctGuesses++;
+    } else if (answer === 'tree') {
+        treeContainer.classList.add('face');
+        totalLosses++;
     } else {
+        boulderContainer.classList.add('face');
         totalLosses++;
     }
 });
